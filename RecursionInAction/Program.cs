@@ -21,7 +21,7 @@ namespace RecursionInAction
                 BasicProblems.Print_Linearly_From_N_To_1(5);
                 */
 
-                var res = BasicProblems.Factorial(10); // 30*20
+                double res = BasicProblems.Factorial(10); // 30*20
                 Console.WriteLine(res);
             }
             finally
