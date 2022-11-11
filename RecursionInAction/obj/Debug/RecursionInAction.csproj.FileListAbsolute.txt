@@ -1,0 +1,7 @@
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\bin\Debug\RecursionInAction.exe.config
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\bin\Debug\RecursionInAction.exe
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\bin\Debug\RecursionInAction.pdb
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\obj\Debug\RecursionInAction.csproj.AssemblyReference.cache
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\obj\Debug\RecursionInAction.csproj.CoreCompileInputs.cache
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\obj\Debug\RecursionInAction.exe
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\RecursionInAction\obj\Debug\RecursionInAction.pdb
