@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecursionInAction
 {
@@ -94,7 +90,69 @@ namespace RecursionInAction
         }
         #endregion
 
-        #region
+        #region Reverse an Array
+        public static void ReverseArrayUsingLoop()
+        {
+            var arr = new int[] { 1,2,3,4,2}; //2 4 3 2 1
+            int start = 0;
+            int last = arr.Length - 1;
+
+            while(start < last)
+            {
+                Helpers.SwapArrayElements(arr, start, last);
+                start++;
+                last--;
+            }
+        }
+        public static int[] ReverseArrayUsing_2Pointers(int [] arr, int start, int last)
+        {
+            if (start >= last) return arr;
+            Helpers.SwapArrayElements(arr, start, last);
+            return ReverseArrayUsing_2Pointers(arr,++start,--last);
+        }
+        public static int[] ReverseArrayUsing_2Pointers(int[] arr, int start)
+        {
+            int index = arr.Length - start - 1;
+            if (index == start) return arr;
+            Helpers.SwapArrayElements(arr, start, index);
+            return ReverseArrayUsing_2Pointers(arr, ++start);
+        }
+        #endregion
+
+        #region Check if a string is Palindrome or not
+        /// <summary>
+        /// T.C. : O(n/2) => O(n)
+        /// S.C. : O(1)
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static bool IsStringPalindrome(string input)
+        {
+            var start = 0;
+            var length = input.Length - 1;
+
+            while(start <= length)
+            {
+                if (input[start] != input[length - start]) return false;
+                ++start;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// T.C. : O(n/2) => O(n)
+        /// S.C. : O(n/2) => O(n)
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="start"></param>
+        /// <returns></returns>
+        public static bool IsStringPalindrome_Recursion(string input, int start = 0)
+        {
+            if (start >= (input.Length)/2) return true;
+            if (input[start] != input[input.Length - 1 - start]) return false;
+            return IsStringPalindrome_Recursion(input, ++start);
+        }
         #endregion
 
     }

@@ -21,8 +21,13 @@ namespace RecursionInAction
                 BasicProblems.Print_Linearly_From_N_To_1(5);
                 */
 
-                double res = BasicProblems.Factorial(10); // 30*20
-                Console.WriteLine(res);
+                //double res = BasicProblems.Factorial(10); // 30*20
+                //Console.WriteLine(res);
+                //var reversedArray = BasicProblems.ReverseArrayUsing_2Pointers(new int[] { 1, 2, 3, 4, 2 }, 0);
+                Console.WriteLine(BasicProblems.IsStringPalindrome_Recursion("madsm"));
+                Console.WriteLine(BasicProblems.IsStringPalindrome_Recursion("madam"));
+                Console.WriteLine(BasicProblems.IsStringPalindrome_Recursion(""));
+                Console.WriteLine(BasicProblems.IsStringPalindrome_Recursion("madams"));
             }
             finally
             {
