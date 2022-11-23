@@ -155,5 +155,77 @@ namespace RecursionInAction
         }
         #endregion
 
+        #region Fibonacci 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,....
+        // Different approaches : https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+
+        /// <summary>
+        /// T.C. : Exponential, as every function calls 2 other functions ~2^n
+        /// S.C. : O(n) : function call stack size
+        /// </summary>
+        /// <param name="nthFibonacciToGet"></param>
+        /// <returns></returns>
+        public static int Fibonacci_Worst(int nthFibonacciToGet)
+        {
+            if (nthFibonacciToGet <= 1)
+                return nthFibonacciToGet;
+
+            return Fibonacci_Worst(nthFibonacciToGet - 1) + Fibonacci_Worst(nthFibonacciToGet - 2);
+        }
+
+        /// <summary>
+        /// T.C. : O(n)
+        /// S.C. : O(n)
+        /// </summary>
+        /// <param name="nthFibonacciToGet"></param>
+        /// <returns></returns>
+        public static int Fibonacci_DP(int nthFibonacciToGet)
+        {
+            int[] fibs = new int[nthFibonacciToGet+1]; // to store already calculted fibonacci's, array size is extra to handle 0th
+            fibs[0] = 0;
+            fibs[1] = 1;
+            
+            for(int index = 2; index <= nthFibonacciToGet; index++)
+            {
+                fibs[index] = fibs[index - 1] + fibs[index - 2];
+            }
+            return fibs[nthFibonacciToGet];
+        }
+
+        /// <summary>
+        /// T.C. : O(n)
+        /// S.C. : O(1)
+        /// </summary>
+        /// <param name="nthFibonacciToGet"></param>
+        /// <returns></returns>
+        public static int Fibonacci_SpaceOptimized(int nthFibonacciToGet)
+        {
+            int tempVar1 = 0, tempVar2 = 1, tempVar3 = 0;
+
+            if (nthFibonacciToGet == 0) return tempVar1;
+
+            for(int index = 2; index <= nthFibonacciToGet; index++)
+            {
+                tempVar3 = tempVar1 + tempVar2;
+                tempVar1 = tempVar2;
+                tempVar2 = tempVar3;
+            }
+            
+            return tempVar2;
+        }
+
+        /// <summary>
+        /// Works fine for upto 71, but from 72 it starts failing bcoz rounding error becomes significantly large
+        /// T.C. : O(logn) as phi^nth takes logn time
+        /// S.C. : O(1)
+        /// </summary>
+        /// <param name="nthFibonacciToGet"></param>
+        /// <returns></returns>
+        public static long Fibonacci_BinetFormula(int nthFibonacciToGet)
+        {
+            double phi = (1 + Math.Sqrt(5)) / 2;
+            return (long) Math.Round(Math.Pow(phi, nthFibonacciToGet) / Math.Sqrt(5));
+        }
+        #endregion
+
     }
 }
