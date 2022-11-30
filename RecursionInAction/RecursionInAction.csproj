@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BasicProblems.cs" />
     <Compile Include="Helpers.cs" />
+    <Compile Include="IntermediateProblems.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -12,7 +12,8 @@ namespace RecursionInAction
         {
             try
             {
-                Console.WriteLine(BasicProblems.Fibonacci_DP(5));
+                IntermediateProblems.PrintAllSubSequences(0, new List<int>() { 5, 1, 2}, new List<int>());
+                Console.WriteLine($"Number of sub-sequences generated are: {IntermediateProblems.howManySubSequencesGenerated}");
             }
             finally
             {
