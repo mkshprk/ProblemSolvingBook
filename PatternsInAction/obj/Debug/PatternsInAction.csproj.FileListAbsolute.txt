@@ -1,0 +1,7 @@
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\bin\Debug\PatternsInAction.exe.config
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\bin\Debug\PatternsInAction.exe
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\bin\Debug\PatternsInAction.pdb
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\obj\Debug\PatternsInAction.csproj.AssemblyReference.cache
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\obj\Debug\PatternsInAction.csproj.CoreCompileInputs.cache
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\obj\Debug\PatternsInAction.exe
+D:\Mine\Educational\Scaler\CodeBlock\ProblemSolving\ProblemSolvingBook\PatternsInAction\obj\Debug\PatternsInAction.pdb

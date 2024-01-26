@@ -42,5 +42,7 @@ namespace RecursionInAction
             PrintAllSubSequences(index+1, array, toStoreItemsToPrint); // don't take last item into consideration
         }
         #endregion
+
+        //https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7
     }
 }
